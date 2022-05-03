@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikar's Audiobooks </title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Wikar's Audiobooks 
+        </h1>
+    </header>
+    <main>
+        <form class="form-container">
+            <h2 class="form-header">Zarejestruj się</h2>
+            <div class="input-container">
+                <label>
+                    Imię
+                </label>
+                <input name="firstName" placeholder="Imię">
+            </div>
+            <div class="input-container">
+                <label>
+                    Nazwisko
+                </label>
+                <input name="lastName" placeholder="Nazwisko">
+            </div>
+            <div class="input-container">
+                <label>
+                    Adres e-mail
+                </label>
+                <input type="email" name="lastName" placeholder="Adres e-mail">
+            </div>
+            <div class="input-container">
+                <label>
+                    Data urodzenia
+                </label>
+                <input type="datetime-local" name="birthDate">
+            </div>
+            <div class="input-container">
+                <label>
+                    Hasło
+                </label>
+                <input type="password" name="password" placeholder="Hasło">
+            </div>
+            <div class="input-container">
+                <label>
+                    Powtórz hasło
+                </label>
+                <input type="password" name="passwordAgain" placeholder="Powtórz hasło">
+            </div>
+            <input onclick="onSubmit()" type="submit" value="Zarejestruj się">
+        </form>
+    </main>
+    <script src="register.js"></script>
+</body>
+
+</html>
