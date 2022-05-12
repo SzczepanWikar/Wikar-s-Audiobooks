@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikar's Audiobooks </title>
+    <link rel="stylesheet" type="text/css" href="shop.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="app-body">
+    <div id="headerAndInputs">
+        <header>
+            Sklep
+        </header>
+        <div class="top-inputs">
+            <input>
+            <span>
+                <img height="20px" src="../assets/icons/sort-svgrepo-com.svg">
+                <img height="20px" src="../assets/icons/filter-svgrepo-com.svg">
+            </span>
+        </div>
+    </div>
+    <main>
+        <div>
+            <h2>Premiery</h2>
+            <div id="premiers" class="bt-container">
+            </div>
+        </div>
+        <div>
+            <h2>Bestsellery</h2>
+            <div id="bestsellers" class="bt-container">
+            </div>
+        </div>
+        <div>
+            <h2>Reszta</h2>
+            <div id="other" class="bt-container">
+            </div>
+        </div>
+    </main>
+    <menu class="mobile-menu">
+        <table>
+            <tr>
+                <td class="menu-option" onclick="location.href='../library/library.html'">
+                    <ion-icon name="basket-outline"></ion-icon>
+                </td>
+                <td onclick="location.href='../library/library.html'" class="menu-option">
+                    <ion-icon name="library-outline"></ion-icon>
+                </td>
+                <td class="menu-option">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </td>
+            </tr>
+        </table>
+    </menu>
+    <menu class="desktop-menu">
+        <div>
+            Wikar's Audiobooks
+        </div>
+        <div class="menu-option" onclick="location.href='../shop/shop.html'">
+            <ion-icon name="basket-outline"></ion-icon> Sklep
+        </div>
+        <div class="menu-option" onclick="location.href='../library/library.html'">
+            <ion-icon name="library-outline"></ion-icon> Biblioteka
+        </div>
+        <div class="menu-option">
+            <ion-icon name="settings-outline"></ion-icon> Ustawienia
+        </div>
+    </menu>
+    <script type="module" src="shop.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
