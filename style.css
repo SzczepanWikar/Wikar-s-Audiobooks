@@ -129,7 +129,7 @@ main {
 .top-inputs > input {
     width: 80%;
     max-width: 480px;
-    background: url(../assets/icons/search-svgrepo-com.svg) no-repeat scroll 5px;
+    background: url(../assets/icons/isearch-svgrepo-com.svg) no-repeat scroll 5px;
     padding-left:30px;
     background-size: 25px;
 }

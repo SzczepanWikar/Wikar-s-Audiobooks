@@ -1,0 +1,23 @@
+@import '../style.css';
+@import '../components/modals/modal.css';
+
+.app-body {
+    grid-template-rows: 40px auto;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 115px auto;
+}
+.buttons {
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
