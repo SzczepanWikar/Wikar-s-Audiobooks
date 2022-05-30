@@ -1,0 +1,74 @@
+@import '../style.css';
+
+main {
+    display: grid;
+    grid-template-rows: auto 60px;
+    height: calc(100%-40px);
+    padding-bottom: 30px;
+
+}
+
+.app-body {
+    grid-template-rows: 40px auto;
+}
+
+.cover-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-conteiner-inner {
+    font-size: 250px;
+    width: 400px;
+    height: 600px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+.options-top {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 4px;
+}
+.listening-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.progres-bar-outer {
+    background: gray;
+    height: 5px;
+}
+
+.progres-bar-inner {
+    height: 5px;
+    background: black;
+    width: 60%;
+}
+
+@media (max-width: 769px) {
+    .app-body {
+        display: grid;
+        grid-template-rows: 40px auto;
+        padding-bottom: 44px;
+    }
+    .cover-conteiner-inner {
+        font-size: 250px;
+        width: 300px;
+        height: 500px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

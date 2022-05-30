@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikar's Audiobooks </title>
+    <link rel="stylesheet" type="text/css" href="listening.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="app-body">
+    <div id="headerAndInputs">
+        <header>
+            Lorem Ipsum
+        </header>
+    </div>
+    <main>
+        <div class="cover-conteiner">
+            <div>
+                <ion-icon class="cover-conteiner-inner" name="book-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="listening-bar">
+            <div class="progres-bar-outer">
+                <div class="progres-bar-inner">
+                </div>
+            </div>
+            <div class="options-top">
+                <span>1.5x</span>
+                <span>2:35:14</span>
+            </div>
+            <div class="options">
+                <ion-icon name="play-skip-forward-outline"></ion-icon>
+                <ion-icon name="return-up-back-outline"></ion-icon>
+                <ion-icon name="play-circle-outline"></ion-icon>
+                <ion-icon name="return-up-forward-outline"></ion-icon>
+                <ion-icon name="play-skip-forward-outline"></ion-icon>
+            </div>
+        </div>
+    </main>
+    <menu class="mobile-menu">
+        <table>
+            <tr>
+                <td class="menu-option" onclick="location.href='../shop/shop.html'">
+                    <ion-icon name="basket-outline"></ion-icon>
+                </td>
+                <td onclick="location.href='../library/library.html'" class="menu-option">
+                    <ion-icon name="library-outline"></ion-icon>
+                </td>
+                <td class="menu-option" onclick="location.href='../settings/settings.html'">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </td>
+            </tr>
+        </table>
+    </menu>
+    <menu class="desktop-menu">
+        <div>
+            Wikar's Audiobooks
+        </div>
+        <div class="menu-option" onclick="location.href='../shop/shop.html'">
+            <ion-icon name="basket-outline"></ion-icon> Sklep
+        </div>
+        <div class="menu-option" onclick="location.href='../library/library.html'">
+            <ion-icon name="library-outline"></ion-icon> Biblioteka
+        </div>
+        <div class="menu-option" onclick="location.href='../settings/settings.html'">
+            <ion-icon name="settings-outline"></ion-icon> Ustawienia
+        </div>
+    </menu>
+    <script type="module" src="listening.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
