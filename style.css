@@ -1,17 +1,27 @@
+:root {
+    --primary-colour: #1565c0;
+    --primary-light: rgb(204, 219, 249);
+    --primary-dark: #003c8f;
+
+    --secondary-colour: #64dd17;
+    --secondary-light: #9cff57;
+    --secondary-dark: #1faa00;
+}
+
 html, body {
     height: 100%;
     font-family: 'Lato', sans-serif;
     margin: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
     color: white;
     font-weight: 600;
     margin-top: 0;
-    background: blue;
+    background: var(--primary-colour);
     text-align: center;
     font-size: 20px;
     padding: 8px;
@@ -26,6 +36,39 @@ main {
     padding: 8px;
 }
 
+button, input[type=button], input[type=submit] {
+    color: #fff;
+    background-color: var(--secondary-dark);
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary-button {
+    background-color: var(--secondary-colour);
+}
+
+a {
+    color: var(--secondary-dark);
+    text-decoration: none;
+}
+
+input {
+    border-color: var(--primary-colour);
+    border-radius: 6px;
+    outline: none !important;
+    box-shadow: none;
+}
+
+input:focus {
+    border-color: var(--secondary-colour);
+ }
+
+
 .sticky {
     position: fixed;
     top: 0;
@@ -35,15 +78,17 @@ main {
 
 .form-container {
     width: 400px;
-    background-color: aliceblue;
+    background-color: var(--primary-light);
     padding: 8px;
     border-radius: 6px;
     margin: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 16px;
 }
+
+
 .form-header {
     text-align: center;
 }
@@ -69,7 +114,7 @@ main {
     padding: 0;
     margin: 0;
     height: 100%;
-    background-color: blue;
+    background-color: var(--primary-colour);
 }
 
 .desktop-menu :first-child {
@@ -79,21 +124,16 @@ main {
 
 .menu-option {
     text-align: center;
+    cursor: pointer;
+}
+
+.active-mobile-menu-option {
+    color: var(--secondary-colour);
 }
 
 @media (max-width: 768px) {
     .desktop-menu {
         display: none;
-    }
-}
-
-@media (min-width: 769px) {
-    .mobile-menu {
-        display: none;
-    }
-    .menu-option {
-        padding:4px;
-        text-align: left;
     }
 }
 
@@ -116,6 +156,14 @@ main {
     menu {
         grid-area: sidebar;
     }
+
+    .mobile-menu {
+        display: none;
+    }
+    .menu-option {
+        padding:4px;
+        text-align: left;
+    }
 }
 
 .top-inputs {
@@ -129,13 +177,32 @@ main {
 .top-inputs > input {
     width: 80%;
     max-width: 480px;
-    background: url(../assets/icons/isearch-svgrepo-com.svg) no-repeat scroll 5px;
+    background: url(assets/icons/isearch-svgrepo-com.svg) no-repeat scroll 5px;
     padding-left:30px;
     background-size: 25px;
+
 }
 
 .top-inputs > span {
     display: flex;
-    gap: 4px;
-} 
+    gap: 16px;
+    padding: 8px 8px 8px 16px;
+}
+
+@media (max-width: 768px) {
+    .top-inputs {
+        display: block;
+    }
+    .top-inputs > span {
+        gap: 32px;
+        padding: 8px 4px;
+        float: right;
+    }   
+    .top-inputs > input {
+        max-width: none;
+        background-size: 25px;
+        padding: 0;
+        width: 100%;
+    }
+}
 

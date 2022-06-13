@@ -8,16 +8,7 @@ for(let i=0; i<30; i++){
     bookTile();
 }
 
-window.onscroll = () => {
-    if (window.pageYOffset > sticky && window.innerWidth < 768) {
-        headerAndInputs.classList.add("sticky");
-        main.style.paddingTop = '90px';
-    } else {
-        headerAndInputs.classList.remove("sticky");
-        main.style.paddingTop = '0';
-
-    }
-};
+window.onscroll = () => setSticky();
 
 window.onresize = () => {
     if(window.innerWidth > 768) {
@@ -25,3 +16,13 @@ window.onresize = () => {
         main.style.paddingTop = '0';
     }
 };
+
+function setSticky() {
+    if (window.pageYOffset > sticky && window.innerWidth < 768) {
+        headerAndInputs.classList.add('sticky');
+        main.style.paddingTop = '90px';
+    } else {
+        headerAndInputs.classList.remove('sticky');
+        main.style.paddingTop = '0';
+    }
+}

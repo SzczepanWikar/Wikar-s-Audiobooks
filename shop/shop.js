@@ -4,27 +4,20 @@ const headerAndInputs = document.getElementById("headerAndInputs");
 const sticky = headerAndInputs.offsetTop;
 const main = document.getElementsByTagName('main')[0];
 
-for(let i=0; i<5; i++){
+setSticky();
+
+for(let i=0; i<3; i++){
     bookTile('premiers');
 }
 
-for(let i=0; i<6; i++){
+for(let i=0; i<3; i++){
     bookTile('bestsellers');
 }
 
 for(let i=0; i<20; i++){
     bookTile('other');
 }
-window.onscroll = () => {
-    if (window.pageYOffset > sticky && window.innerWidth < 768) {
-        headerAndInputs.classList.add("sticky");
-        main.style.paddingTop = '90px';
-    } else {
-        headerAndInputs.classList.remove("sticky");
-        main.style.paddingTop = '0';
-
-    }
-};
+window.onscroll = () => setSticky();
 
 window.onresize = () => {
     if(window.innerWidth > 768) {
@@ -32,3 +25,14 @@ window.onresize = () => {
         main.style.paddingTop = '0';
     }
 };
+
+
+function setSticky() {
+    if (window.pageYOffset > sticky && window.innerWidth < 768) {
+        headerAndInputs.classList.add('sticky');
+        main.style.paddingTop = '90px';
+    } else {
+        headerAndInputs.classList.remove('sticky');
+        main.style.paddingTop = '0';
+    }
+}
