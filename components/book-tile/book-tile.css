@@ -23,9 +23,11 @@
     padding-bottom: 4px;
  }
  .bt-stars {
+    color: var(--secondary-colour);
     font-size: 15px;
  }
  .bt-title {
+    color: var(--primary-dark);
     font-size: 20px;
     font-weight: 600;
  }
