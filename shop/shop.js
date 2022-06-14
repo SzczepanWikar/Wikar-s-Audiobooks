@@ -6,11 +6,11 @@ const main = document.getElementsByTagName('main')[0];
 
 setSticky();
 
-for(let i=0; i<3; i++){
+for(let i=0; i<4; i++){
     bookTile('premiers');
 }
 
-for(let i=0; i<3; i++){
+for(let i=0; i<4; i++){
     bookTile('bestsellers');
 }
 
