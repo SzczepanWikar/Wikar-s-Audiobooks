@@ -20,7 +20,7 @@ header > ion-icon {
 }
 
 .input-container {
-    padding: 4px;
+    margin: 16px 0;
     display: grid;
     grid-template-columns: 115px auto;
 }
