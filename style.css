@@ -139,6 +139,7 @@ h2 {
 
 .extra-menu-option > img {
   margin: 8px 44px 8px 0;
+  cursor: pointer;
 }
 
 .active-desktop-menu-option {
