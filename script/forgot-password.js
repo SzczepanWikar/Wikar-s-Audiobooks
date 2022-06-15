@@ -5,7 +5,7 @@ const sentEmail =`
 <span>
     Na podany adres e-mail przesłaliśmy wiadomość z linkiem prowadzacąym do formularza zmiany hasła.
 </span>
-<button onclick="location.href ='../login/login.html'">Zaloguj się</button>
+<button onclick="location.href ='login.html'">Zaloguj się</button>
 `;
 function onResetPassword() {
     document.getElementsByClassName('form-container')[0].innerHTML = sentEmail;

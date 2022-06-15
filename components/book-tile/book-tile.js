@@ -20,7 +20,7 @@ export function bookTile(id='') {
     let bookContainer = document.createElement('div');
     const book = books[~~(books.length*Math.random())];
     bookContainer.innerHTML = `
-        <div onclick="location.href='../listening/listening.html'; " class="bt-inner-container ">
+        <div ${ !id.length ? 'onclick="location.href='+ "'listening.html'"+';"' : '' }  class="bt-inner-container ">
             <img class="bt-image"alt="${book.author + ' ' + book.title}" src="${book.cover}">
             <div class="bt-stars">
                 <ion-icon name="star"></ion-icon>

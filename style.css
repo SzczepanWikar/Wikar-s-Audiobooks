@@ -46,6 +46,7 @@ button, input[type=button], input[type=submit] {
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .secondary-button {
@@ -176,8 +177,14 @@ h2 {
         display: none;
     }
     .menu-option {
+        display: flex;
+        align-items: center;
         padding:4px;
         text-align: left;
+    }
+
+    .menu-option > ion-icon {
+        margin: 0 8px ;
     }
 }
 

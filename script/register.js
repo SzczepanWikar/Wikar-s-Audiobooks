@@ -6,7 +6,7 @@ const thanksForRegisterHtml = `
     <span>
         Możesz się już zalogować
     </span>
-    <button style="height: 30px" onclick="location.href ='../login/login.html'">Zaloguj się</button>
+    <button style="height: 30px" onclick="location.href ='login.html'">Zaloguj się</button>
 </div>
 `;
 

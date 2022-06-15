@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikar's Audiobooks </title>
-    <link rel="stylesheet" type="text/css" href="shop.css">
+    <link rel="stylesheet" type="text/css" href="style/settings.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,43 +16,46 @@
 <body class="app-body">
     <div id="headerAndInputs">
         <header>
-            Sklep
+            Ustawienia
+            <ion-icon onclick="location.href='login.html'" name="log-out-outline"></ion-icon>
         </header>
-        <div class="top-inputs">
-            <input>
-            <span>
-                <img height="20px" src="../assets/icons/sort-svgrepo-com.svg">
-                <img height="20px" src="../assets/icons/filter-svgrepo-com.svg">
-            </span>
-        </div>
     </div>
     <main>
-        <div>
-            <h2>Premiery</h2>
-            <div id="premiers" class="bt-container">
+        <div class="form-container">
+            <div class="input-container">
+                <label>
+                    Imię
+                </label>
+                <input name="firstName" placeholder="Imię">
             </div>
-        </div>
-        <div>
-            <h2>Bestsellery</h2>
-            <div id="bestsellers" class="bt-container">
+            <div class="input-container">
+                <label>
+                    Nazwisko
+                </label>
+                <input name="lastName" placeholder="Nazwisko">
             </div>
-        </div>
-        <div>
-            <h2>Inne</h2>
-            <div id="other" class="bt-container">
+            <div class="input-container">
+                <label>
+                    Data urodzenia
+                </label>
+                <input type="datetime-local" name="birthDate">
+            </div>
+            <div class="buttons">
+                <button id="changePassword" class="secondary-button">Zmień hasło</button>
+                <button >Zapisz</button>
             </div>
         </div>
     </main>
     <menu class="mobile-menu">
         <table>
             <tr>
-                <td class="menu-option active-mobile-menu-option" onclick="location.href='../library/library.html'">
+                <td class="menu-option " onclick="location.href='library.html'">
                     <ion-icon name="basket-outline"></ion-icon>
                 </td>
-                <td onclick="location.href='../library/library.html'" class="menu-option">
+                <td onclick="location.href='library.html'" class="menu-option">
                     <ion-icon name="library-outline"></ion-icon>
                 </td>
-                <td class="menu-option" onclick="location.href='../settings/settings.html'">
+                <td class="menu-option active-mobile-menu-option" onclick="location.href='settings.html'">
                     <ion-icon name="settings-outline"></ion-icon>
                 </td>
             </tr>
@@ -62,17 +65,17 @@
         <div>
             Wikar's Audiobooks
         </div>
-        <div class="menu-option active-desktop-menu-option" id="menu-shop" onclick="location.href='../shop/shop.html'">
+        <div class="menu-option" onclick="location.href='shop.html'">
             <ion-icon name="basket-outline"></ion-icon> Sklep
         </div>
-        <div class="menu-option" id="menu-library" onclick="location.href='../library/library.html'">
+        <div class="menu-option" onclick="location.href='library.html'">
             <ion-icon name="library-outline"></ion-icon> Biblioteka
         </div>
-        <div class="menu-option" id="menu-settings" onclick="location.href='../settings/settings.html'">
+        <div class="menu-option active-desktop-menu-option" onclick="location.href='settings.html'">
             <ion-icon name="settings-outline"></ion-icon> Ustawienia
         </div>
     </menu>
-    <script type="module" src="shop.js"></script>
+    <script type="module" src="script/settings.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
