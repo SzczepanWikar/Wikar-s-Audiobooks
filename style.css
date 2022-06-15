@@ -14,18 +14,21 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 
 header {
     color: white;
     font-weight: 600;
     margin-top: 0;
-    background: var(--primary-colour);
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
     text-align: center;
-    font-size: 20px;
-    padding: 8px;
+    font-size: 28px;
+    padding: 12px;
     width: 100%;
+    z-index: 9999;
 }
 
 input {
@@ -33,6 +36,8 @@ input {
 }
 
 main {
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 0 8px;
 }
 
@@ -80,13 +85,6 @@ h2 {
     color: var(--primary-dark);
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-}
-
 .form-container {
     width: 400px;
     background-color: var(--primary-light);
@@ -127,7 +125,21 @@ h2 {
     margin: 0;
     height: 100%;
     background-color: var(--primary-colour);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
+.extra-menu-option {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    text-align: left;
+}
+
+.extra-menu-option > img {
+    margin: 8px 32px 8px 0;
+}
+
 .active-desktop-menu-option {
     background-color: var(--secondary-dark);
 }
@@ -157,7 +169,7 @@ h2 {
     .app-body {
         gap: 0;
         display: grid;
-        grid-template-columns: 150px auto;
+        grid-template-columns: 180px auto;
         grid-template-rows: auto;
         grid-template-areas: 
           "sidebar header"
@@ -187,7 +199,9 @@ h2 {
         margin: 0 8px ;
     }
 }
-
+.part-title {
+    text-align: center;
+}
 .top-inputs {
     display: flex;
     justify-content: space-between;

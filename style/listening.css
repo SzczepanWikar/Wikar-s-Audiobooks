@@ -2,8 +2,8 @@
 
 main {
     display: grid;
-    grid-template-rows: auto 60px;
-
+    grid-template-rows: auto 90px;
+    overflow: hidden;
     padding-bottom: 36px;
 
 }

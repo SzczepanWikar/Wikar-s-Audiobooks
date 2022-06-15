@@ -6,7 +6,7 @@ export function changePasswordModal() {
                     <h2>
                         Zmień hasło
                     </h2>
-                    <ion-icon onclick="document.getElementById('changePasswordModal').remove()" name="close-outline"></ion-icon>
+                    <ion-icon onclick="document.getElementById('changePasswordModal').remove()" style="cursor: pointer" name="close-outline"></ion-icon>
                 </div>
                 <div class="modal-content">
                     <div class="input-container">

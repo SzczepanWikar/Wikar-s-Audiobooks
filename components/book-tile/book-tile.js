@@ -10,9 +10,9 @@ class Book {
     }
 }
 const books = [
-    new Book('Matt Ridley', 'How to innovation...', 'assets/covers/matt-ridley-H-LIL57PHCc-unsplash-edited.jpg'),// I know I should use CSS to hide it, but it only need to look good.
-    new Book('Paul Jarvis', 'Company of one', 'assets/covers/surja-sen-das-raj-ViMrMawjj7s-unsplash-edited.jpg'),
-    new Book('Oscar Wilde', 'Picture of the Dortain...', 'assets/covers/tim-alex-1i-P178kxHQ-unsplash-edited.jpg'), 
+    new Book('Matt Ridley', 'How to innovation works', 'assets/covers/matt-ridley-H-LIL57PHCc-unsplash-edited.jpg'),
+    new Book('Paul Jarvis', 'Company of One. Why staing small is next big thing for buisness.', 'assets/covers/surja-sen-das-raj-ViMrMawjj7s-unsplash-edited.jpg'),
+    new Book('Oscar Wilde', 'Picture of the Dortain Gray', 'assets/covers/tim-alex-1i-P178kxHQ-unsplash-edited.jpg'), 
 ];
 
 export function bookTile(id='') {
