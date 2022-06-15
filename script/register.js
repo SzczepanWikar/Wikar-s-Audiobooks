@@ -11,5 +11,5 @@ const thanksForRegisterHtml = `
 `;
 
 function onSubmit() {
-    document.getElementsByTagName('main')[0].innerHTML = thanksForRegisterHtml;
+  document.getElementsByTagName("main")[0].innerHTML = thanksForRegisterHtml;
 }

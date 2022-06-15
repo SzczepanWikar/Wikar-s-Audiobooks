@@ -1,5 +1,5 @@
 export function changePasswordModal() {
-    return  `
+  return `
         <div onclick="document.getElementById('changePasswordModal').remove()" class="modal-background">
             <div onclick="event.stopPropagation()" class="modal-container">
                 <div class="modal-header">
@@ -31,5 +31,5 @@ export function changePasswordModal() {
                 <button onclick="document.getElementById('changePasswordModal').remove()" class="save-button"> Zapisz </button>
             </div>
         <div>
-    `
+    `;
 }

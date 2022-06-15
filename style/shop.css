@@ -1,6 +1,6 @@
-@import '../style.css';
-@import '../components/book-tile/book-tile.css';
+@import "../style.css";
+@import "../components/book-tile/book-tile.css";
 
 .bt-container > a {
-    margin-top: auto;
+  margin-top: auto;
 }

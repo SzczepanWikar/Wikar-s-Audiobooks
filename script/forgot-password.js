@@ -1,4 +1,4 @@
-const sentEmail =`
+const sentEmail = `
 <h2 class="form-header">
     Zresetowano hasło
 </h2>
@@ -8,5 +8,5 @@ const sentEmail =`
 <button onclick="location.href ='login.html'">Zaloguj się</button>
 `;
 function onResetPassword() {
-    document.getElementsByClassName('form-container')[0].innerHTML = sentEmail;
+  document.getElementsByClassName("form-container")[0].innerHTML = sentEmail;
 }

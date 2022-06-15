@@ -1,31 +1,31 @@
-@import '../style.css';
-@import '../components/modals/modal.css';
+@import "../style.css";
+@import "../components/modals/modal.css";
 
 .app-body {
-    grid-template-rows: 40px auto;
+  grid-template-rows: 40px auto;
 }
 main {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header {
-    display: inline-block;
+  display: inline-block;
 }
 header > ion-icon {
-    float: right;
-    margin-right: 32px;
-    font-size: 30px;
+  float: right;
+  margin-right: 32px;
+  font-size: 30px;
 }
 
 .input-container {
-    margin: 16px 0;
-    display: grid;
-    grid-template-columns: 115px auto;
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 115px auto;
 }
 .buttons {
-    padding: 4px;
-    display: flex;
-    justify-content: space-between;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wikar's Audiobooks </title>
-    <link rel="stylesheet" type="text/css" href="style/settings.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikar's Audiobooks</title>
+    <link rel="stylesheet" type="text/css" href="style/settings.css" />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="app-body">
+  <body class="app-body">
     <div id="headerAndInputs">
-        <header>
-            Ustawienia
-            <ion-icon onclick="location.href='login.html'" name="log-out-outline"></ion-icon>
-        </header>
+      <header>
+        Ustawienia
+        <ion-icon
+          onclick="location.href='login.html'"
+          name="log-out-outline"
+        ></ion-icon>
+      </header>
     </div>
     <main>
-        <div class="form-container">
-            <div class="input-container">
-                <label>
-                    Imię
-                </label>
-                <input name="firstName" placeholder="Imię">
-            </div>
-            <div class="input-container">
-                <label>
-                    Nazwisko
-                </label>
-                <input name="lastName" placeholder="Nazwisko">
-            </div>
-            <div class="input-container">
-                <label>
-                    Data urodzenia
-                </label>
-                <input type="datetime-local" name="birthDate">
-            </div>
-            <div class="buttons">
-                <button id="changePassword" class="secondary-button">Zmień hasło</button>
-                <button >Zapisz</button>
-            </div>
+      <div class="form-container">
+        <div class="input-container">
+          <label> Imię </label>
+          <input name="firstName" placeholder="Imię" />
         </div>
+        <div class="input-container">
+          <label> Nazwisko </label>
+          <input name="lastName" placeholder="Nazwisko" />
+        </div>
+        <div class="input-container">
+          <label> Data urodzenia </label>
+          <input type="datetime-local" name="birthDate" />
+        </div>
+        <div class="buttons">
+          <button id="changePassword" class="secondary-button">
+            Zmień hasło
+          </button>
+          <button>Zapisz</button>
+        </div>
+      </div>
     </main>
     <menu class="mobile-menu">
-        <table>
-            <tr>
-                <td class="menu-option " onclick="location.href='library.html'">
-                    <ion-icon name="basket-outline"></ion-icon>
-                </td>
-                <td onclick="location.href='library.html'" class="menu-option">
-                    <ion-icon name="library-outline"></ion-icon>
-                </td>
-                <td class="menu-option active-mobile-menu-option" onclick="location.href='settings.html'">
-                    <ion-icon name="settings-outline"></ion-icon>
-                </td>
-            </tr>
-        </table>
+      <table>
+        <tr>
+          <td class="menu-option" onclick="location.href='library.html'">
+            <ion-icon name="basket-outline"></ion-icon>
+          </td>
+          <td onclick="location.href='library.html'" class="menu-option">
+            <ion-icon name="library-outline"></ion-icon>
+          </td>
+          <td
+            class="menu-option active-mobile-menu-option"
+            onclick="location.href='settings.html'"
+          >
+            <ion-icon name="settings-outline"></ion-icon>
+          </td>
+        </tr>
+      </table>
     </menu>
     <menu class="desktop-menu">
-        <div>
-        <div>
-            Wikar's Audiobooks
-        </div>
+      <div>
+        <div>Wikar's Audiobooks</div>
         <div class="menu-option" onclick="location.href='shop.html'">
-            <ion-icon name="basket-outline"></ion-icon> Sklep
+          <ion-icon name="basket-outline"></ion-icon> Sklep
         </div>
         <div class="menu-option" onclick="location.href='library.html'">
-            <ion-icon name="library-outline"></ion-icon> Biblioteka
+          <ion-icon name="library-outline"></ion-icon> Biblioteka
         </div>
         <div class="extra-menu-option">
-            Ostatnie
-            <img src="/assets/covers/matt-ridley-H-LIL57PHCc-unsplash-edited.jpg">
+          Ostatnie
+          <img
+            src="/assets/covers/matt-ridley-H-LIL57PHCc-unsplash-edited.jpg"
+          />
         </div>
         <div class="extra-menu-option">
-            Polecane
-            <img src="/assets/covers/surja-sen-das-raj-ViMrMawjj7s-unsplash-edited.jpg">
-            <img src="/assets/covers/tim-alex-1i-P178kxHQ-unsplash-edited.jpg">
+          Polecane
+          <img
+            src="/assets/covers/surja-sen-das-raj-ViMrMawjj7s-unsplash-edited.jpg"
+          />
+          <img src="/assets/covers/tim-alex-1i-P178kxHQ-unsplash-edited.jpg" />
         </div>
-    </div>
-        <div class="menu-option active-desktop-menu-option" onclick="location.href='settings.html'">
-            <ion-icon name="settings-outline"></ion-icon> Ustawienia
-        </div>
+      </div>
+      <div
+        class="menu-option active-desktop-menu-option"
+        onclick="location.href='settings.html'"
+      >
+        <ion-icon name="settings-outline"></ion-icon> Ustawienia
+      </div>
     </menu>
     <script type="module" src="script/settings.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
