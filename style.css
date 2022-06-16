@@ -157,6 +157,10 @@ h2 {
   cursor: pointer;
 }
 
+.menu-option > ion-icon {
+  --ionicon-stroke-width: 32px;
+}
+
 .active-mobile-menu-option {
   color: var(--secondary-colour);
 }
